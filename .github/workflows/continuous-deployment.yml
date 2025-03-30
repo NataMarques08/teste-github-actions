@@ -35,7 +35,7 @@ jobs:
       run: mvn clean package -DskipTests
     
     - name: Docker Compose Build
-      working-directory: ./teste-github-actions
+      working-directory: .
       run: docker-compose --build 
        
      
