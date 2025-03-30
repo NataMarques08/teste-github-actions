@@ -1,0 +1,8 @@
+
+services:
+  hello-world-api:
+    image: natamarques/teste-project
+    build: ./teste-project
+    ports:
+      - "80:80"
+    restart: always
