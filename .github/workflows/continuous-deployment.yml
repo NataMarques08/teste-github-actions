@@ -31,13 +31,8 @@ jobs:
         java-version: '21'
         cache: 'maven'
 
-    ## - uses: actions/checkout@v4
-    ##- name: Build the Docker image
-    ##  run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-
-    ##- name: Construir Aplicação  
-    ##  run: mvn clean package
-     
+    - name: Constrói o projeto
+      run: mvn clean package -DskipTests
        
      
     
