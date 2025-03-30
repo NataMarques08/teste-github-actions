@@ -30,6 +30,11 @@ jobs:
         java-version: '21'
         cache: 'maven'
 
+    - name: 📦 Instalar Docker Compose
+      run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose    
+
     - name: Build Project
       working-directory: ./teste-project  
       run: mvn clean package -DskipTests
