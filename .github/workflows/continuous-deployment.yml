@@ -32,6 +32,7 @@ jobs:
         cache: 'maven'
 
     - name: Constrói o projeto
+      working-directory: ./teste-project  
       run: mvn clean package -DskipTests
        
      
