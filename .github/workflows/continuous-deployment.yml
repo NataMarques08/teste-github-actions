@@ -45,7 +45,6 @@ jobs:
 
     - name: Push to Docker Hub
       run: |
-        docker tag teste-project:latest ${{ secrets.DOCKER_USERNAME }}/teste-project:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/teste-project:latest  
        
      
